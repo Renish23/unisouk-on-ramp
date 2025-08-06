@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import unisoukLogo from "@/assets/unisouk-logo.png";
+import unisoukLogo from "@/assets/hero-shopkeeper.jpg";
 
 const Header = () => {
   return (
