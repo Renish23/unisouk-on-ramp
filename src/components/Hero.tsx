@@ -31,8 +31,6 @@ const Hero = () => {
               
               <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
                 <strong>India's easiest way to tap lakhs of buyers & boost your business online.</strong>
-                <br />
-                Start selling on ONDC today, even if you have never sold online before.
               </p>
             </div>
             

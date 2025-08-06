@@ -52,8 +52,8 @@ const CTA = () => {
             </div>
             
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-3xl mx-auto">
-              The future belongs to those who act today. 
-              <span className="text-cyan-400 font-semibold"> Start now. Grow exponentially. Dominate your market.</span>
+              Start selling on ONDC today, even if you have never sold online before.
+              <span className="text-cyan-400 font-semibold"> The future belongs to those who act today.</span>
             </p>
           </div>
           
@@ -81,6 +81,11 @@ const CTA = () => {
               <br />
               <span className="text-cyan-400">Don't wait while your competitors capture your customers.</span>
             </p>
+            <div className="mt-4 pt-4 border-t border-white/10">
+              <p className="text-sm text-white/70">
+                Need help? Contact us: <span className="text-cyan-400">+91 9033002465</span> | <span className="text-cyan-400">connect@unisouk.com</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

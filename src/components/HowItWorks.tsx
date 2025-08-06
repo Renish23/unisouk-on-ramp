@@ -47,23 +47,23 @@ const HowItWorks = () => {
           
           <div className="grid md:grid-cols-3 gap-8 relative z-10">
             {steps.map((step, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <Card key={index} className="group border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2">
                 <CardContent className="p-8 text-center space-y-6">
-                  <div className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center mx-auto shadow-lg`}>
+                  <div className={`w-16 h-16 ${step.color} rounded-full flex items-center justify-center mx-auto shadow-lg group-hover:shadow-2xl transition-all duration-300 group-hover:scale-110`}>
                     {step.icon}
                   </div>
                   
                   <div className="space-y-3">
-                    <h3 className="text-xl font-semibold text-foreground">
+                    <h3 className="text-xl font-semibold text-foreground group-hover:text-brand-orange transition-colors">
                       <span className="text-brand-orange font-bold">Step {step.number}:</span>{" "}
                       {step.title}
                     </h3>
-                    <p className="text-muted-foreground">{step.description}</p>
+                    <p className="text-muted-foreground group-hover:text-foreground transition-colors">{step.description}</p>
                   </div>
                   
                   {index === steps.length - 1 && (
                     <div className="pt-4">
-                      <Button variant="hero" className="w-full">
+                      <Button variant="hero" className="w-full group-hover:bg-brand-green transition-colors">
                         Start Step {step.number}
                       </Button>
                     </div>
@@ -74,14 +74,6 @@ const HowItWorks = () => {
           </div>
         </div>
         
-        <div className="text-center mt-12">
-          <Button variant="cta" size="lg" className="text-lg px-12 py-6">
-            Start Selling Free
-          </Button>
-          <p className="text-sm text-muted-foreground mt-4">
-            ✨ No credit card required • ✨ Setup in under 5 minutes
-          </p>
-        </div>
       </div>
     </section>
   );
