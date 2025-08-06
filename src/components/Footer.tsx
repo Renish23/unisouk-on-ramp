@@ -1,5 +1,4 @@
-// import unisoukLogo from "@/assets/unisouk-logo.png";
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Mail, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -36,19 +35,33 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <span>+91-98XXXXXX</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <MessageCircle className="w-4 h-4" />
-                <span>WhatsApp Support</span>
+                <span>+91 9033002465</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span>support@unisouk.com</span>
+                <span>connect@unisouk.com</span>
               </li>
               <li className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4" />
-                <span>Available Pan-India</span>
+                <Instagram className="w-4 h-4" />
+                <a 
+                  href="https://www.instagram.com/unisoukindia/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-orange transition-colors"
+                >
+                  Instagram
+                </a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <Linkedin className="w-4 h-4" />
+                <a 
+                  href="https://www.linkedin.com/company/unisouk/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-orange transition-colors"
+                >
+                  LinkedIn
+                </a>
               </li>
             </ul>
           </div>
@@ -60,11 +73,6 @@ const Footer = () => {
               <span>Hindi</span>
               <span>English</span>
               <span>Gujarati</span>
-              <span>Tamil</span>
-              <span>Bengali</span>
-              <span>Marathi</span>
-              <span>Telugu</span>
-              <span>Kannada</span>
             </div>
           </div>
         </div>

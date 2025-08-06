@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-// import unisoukLogo from "@/assets/unisouk-logo.png";
 
 const Header = () => {
   return (
@@ -27,9 +26,6 @@ const Header = () => {
         </div>
         
         <div className="flex items-center space-x-2">
-          <Button variant="outline-orange" size="sm" className="hidden md:inline-flex">
-            Call +91-98XXXXXX
-          </Button>
           <Button variant="hero" size="sm">
             Get Started Free
           </Button>
