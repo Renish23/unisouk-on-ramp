@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import unisoukLogo from "@/assets/unisouk-logo.png";
 
 const Header = () => {
   return (
@@ -6,10 +7,11 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-brand-green rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm md:text-base">U</span>
-            </div>
-            <span className="text-xl md:text-2xl font-bold text-brand-green">UniSouk</span>
+            <img 
+              src={unisoukLogo} 
+              alt="UniSouk Logo" 
+              className="w-8 h-8 md:w-10 md:h-10 object-contain"
+            />
           </div>
         </div>
         

@@ -1,4 +1,5 @@
 import { Phone, Mail, Instagram, Linkedin } from "lucide-react";
+import unisoukLogo from "@/assets/unisouk-logo.png";
 
 const Footer = () => {
   return (
@@ -8,10 +9,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-brand-orange rounded-full flex items-center justify-center">
-                <span className="text-white font-bold">U</span>
-              </div>
-              <span className="text-2xl font-bold text-brand-orange">UniSouk</span>
+              <img 
+                src={unisoukLogo} 
+                alt="UniSouk Logo" 
+                className="w-10 h-10 object-contain"
+              />
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
               India's easiest way to join ONDC and grow your business online. Trusted by thousands of sellers across India.

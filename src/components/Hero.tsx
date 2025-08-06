@@ -41,7 +41,12 @@ const Hero = () => {
                 Get Started in Minutes
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-white/10 border-white text-white hover:bg-white hover:text-brand-green">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="text-lg px-8 py-6 bg-white/10 border-white text-white hover:bg-white hover:text-brand-green"
+                onClick={() => window.open('https://app.storylane.io/share/szxlx9zg6i2j', '_blank')}
+              >
                 Watch Demo
               </Button>
             </div>

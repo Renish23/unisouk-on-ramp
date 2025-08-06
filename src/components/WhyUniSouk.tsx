@@ -46,8 +46,7 @@ const WhyUniSouk = () => {
                   {feature.icon}
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-foreground flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                  <h3 className="text-xl font-semibold text-foreground">
                     {feature.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
@@ -58,8 +57,13 @@ const WhyUniSouk = () => {
         </div>
         
         <div className="text-center">
-          <Button variant="cta" size="lg" className="text-lg px-12 py-6">
-            See Live Demo
+          <Button 
+            variant="cta" 
+            size="lg" 
+            className="text-lg px-12 py-6"
+            onClick={() => window.open('https://app.storylane.io/share/szxlx9zg6i2j', '_blank')}
+          >
+            Watch Demo
           </Button>
         </div>
       </div>

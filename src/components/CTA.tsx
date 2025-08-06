@@ -1,63 +1,86 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Phone, MessageCircle, Clock } from "lucide-react";
+import { ArrowRight, Sparkles, Zap, Rocket } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-brand-green via-brand-green-light to-brand-green relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+    <section className="relative py-20 md:py-32 overflow-hidden">
+      {/* Futuristic animated background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-violet-900 via-purple-900 to-indigo-900"></div>
+      
+      {/* Animated gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 animate-pulse"></div>
+      
+      {/* Geometric patterns */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-cyan-400/30 rotate-45 animate-spin" style={{ animationDuration: '10s' }}></div>
+        <div className="absolute top-3/4 right-1/4 w-24 h-24 border border-purple-400/30 rotate-12 animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-16 h-16 border border-pink-400/30 rotate-45 animate-bounce"></div>
+      </div>
+      
+      {/* Floating particles */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/3 left-1/5 w-2 h-2 bg-cyan-400 rounded-full animate-ping"></div>
+        <div className="absolute top-2/3 right-1/5 w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/3 left-2/3 w-1 h-1 bg-pink-400 rounded-full animate-bounce"></div>
+      </div>
+      
+      {/* Grid pattern overlay */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.02%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
       
       <div className="relative container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center text-white space-y-8">
-          <div className="space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-              Don't Let Big Players Take All the Business –{" "}
-              <span className="text-brand-orange">Join ONDC with UniSouk!</span>
+        <div className="max-w-4xl mx-auto text-center space-y-12">
+          {/* Glowing badge */}
+          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 backdrop-blur-md border border-white/20 rounded-full px-6 py-3">
+            <Sparkles className="w-5 h-5 text-cyan-400 animate-pulse" />
+            <span className="text-white/90 font-medium">Limited Time: Free Forever Plan</span>
+            <Zap className="w-5 h-5 text-yellow-400 animate-bounce" />
+          </div>
+          
+          {/* Main heading with gradient text */}
+          <div className="space-y-6">
+            <h2 className="text-4xl md:text-6xl font-bold leading-tight">
+              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Don't Let Big Players
+              </span>
+              <br />
+              <span className="text-white">Take All the Business</span>
             </h2>
-            <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
-              Start now. Grow big. Serve more customers. It's your time!
+            
+            <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent text-2xl md:text-3xl font-bold">
+              <Rocket className="w-8 h-8 text-orange-400 animate-bounce" />
+              <span>Join ONDC with UniSouk NOW!</span>
+            </div>
+            
+            <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-3xl mx-auto">
+              The future belongs to those who act today. 
+              <span className="text-cyan-400 font-semibold"> Start now. Grow exponentially. Dominate your market.</span>
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-12 py-6 bg-brand-orange hover:bg-brand-orange-light">
-              Begin Your ONDC Journey FREE
-              <ArrowRight className="w-5 h-5 ml-2" />
+          {/* CTA Button with enhanced styling */}
+          <div className="flex justify-center">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="group relative text-xl px-16 py-8 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-400 hover:to-red-400 text-white border-0 shadow-2xl shadow-orange-500/25 transform hover:scale-105 transition-all duration-300"
+            >
+              <span className="relative z-10 flex items-center">
+                Begin Your ONDC Journey FREE
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+              </span>
+              
+              {/* Glowing effect */}
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-400 to-red-400 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300"></div>
             </Button>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6 mt-12">
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
-              <CardContent className="p-6 text-center space-y-3">
-                <Clock className="w-8 h-8 text-brand-orange mx-auto" />
-                <h3 className="font-semibold">Quick Setup</h3>
-                <p className="text-sm text-white/80">Start selling in under 5 minutes</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
-              <CardContent className="p-6 text-center space-y-3">
-                <MessageCircle className="w-8 h-8 text-brand-orange mx-auto" />
-                <h3 className="font-semibold">WhatsApp Support</h3>
-                <p className="text-sm text-white/80">Help in your local language</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white/10 border-white/20 backdrop-blur-sm">
-              <CardContent className="p-6 text-center space-y-3">
-                <Phone className="w-8 h-8 text-brand-orange mx-auto" />
-                <h3 className="font-semibold">Call Support</h3>
-                <p className="text-sm text-white/80">Speak to our experts anytime</p>
-              </CardContent>
-            </Card>
-          </div>
-          
-          <div className="pt-8 border-t border-white/20">
-            <p className="text-lg mb-4">Or call us directly at</p>
-            <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-brand-green text-lg px-8">
-              <Phone className="w-5 h-5 mr-2" />
-              +91-98XXXXXX
-            </Button>
+          {/* Urgency text */}
+          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 mx-auto max-w-2xl">
+            <p className="text-lg text-white/90">
+              ⚡ <strong className="text-yellow-400">Over 10,000+ sellers</strong> have already joined ONDC. 
+              <br />
+              <span className="text-cyan-400">Don't wait while your competitors capture your customers.</span>
+            </p>
           </div>
         </div>
       </div>
