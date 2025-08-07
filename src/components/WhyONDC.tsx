@@ -57,7 +57,12 @@ const WhyONDC = () => {
           <p className="text-xl mb-6 text-white/90">
             Made for small businesses by the government. Trusted, secure, and powerful.
           </p>
-          <Button variant="hero" size="lg" className="bg-brand-orange hover:bg-brand-orange-light">
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="bg-brand-orange hover:bg-brand-orange-light"
+            onClick={() => window.open('https://dashboard.unisouk.com/auth/login/', '_blank')}
+          >
             Start Selling Now!
           </Button>
         </div>

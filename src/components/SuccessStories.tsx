@@ -35,7 +35,7 @@ const SuccessStories = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Meet Our UniSouk Heroes
+            ONDC Success Stories
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Real sellers, real results, real success stories from across India.
@@ -44,7 +44,7 @@ const SuccessStories = () => {
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {stories.map((story, index) => (
-            <Card key={index} className="border-2 border-transparent hover:border-brand-orange transition-all duration-300 hover:shadow-brand group">
+            <Card key={index} className="border-2 border-transparent hover:border-brand-orange transition-all duration-300 hover:shadow-brand group bg-gradient-to-br from-orange-50/50 to-orange-100/30">
               <CardContent className="p-8 space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-brand-orange rounded-full flex items-center justify-center text-white font-bold text-lg">
@@ -78,11 +78,6 @@ const SuccessStories = () => {
           ))}
         </div>
         
-        <div className="text-center">
-          <Button variant="outline-orange" size="lg">
-            See More Stories
-          </Button>
-        </div>
       </div>
     </section>
   );

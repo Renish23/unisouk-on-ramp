@@ -40,8 +40,7 @@ const ProductCategories = () => {
         
         <div className="text-center mt-8">
           <p className="text-muted-foreground">
-            <span className="font-semibold text-brand-orange">Drag & drop</span> photos or send them via{" "}
-            <span className="font-semibold text-brand-green">WhatsApp</span> - it's that simple!
+            <span className="font-semibold text-brand-orange">Simple listing process</span> - upload photos and product details in minutes!
           </p>
         </div>
       </div>

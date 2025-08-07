@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import unisoukLogo from "@/assets/hero-shopkeeper.jpg";
+import unisoukLogo from "@/assets/unisouk-logo.png";
 
 const Header = () => {
   return (
@@ -28,7 +28,11 @@ const Header = () => {
         </div>
         
         <div className="flex items-center space-x-2">
-          <Button variant="hero" size="sm">
+          <Button 
+            variant="hero" 
+            size="sm" 
+            onClick={() => window.open('https://dashboard.unisouk.com/auth/login/', '_blank')}
+          >
             Get Started Free
           </Button>
         </div>

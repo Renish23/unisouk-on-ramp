@@ -1,5 +1,5 @@
 import { Phone, Mail, Instagram, Linkedin } from "lucide-react";
-import unisoukLogo from "@/assets/hero-shopkeeper.jpg";
+import unisoukLogo from "@/assets/unisouk-logo.png";
 
 const Footer = () => {
   return (

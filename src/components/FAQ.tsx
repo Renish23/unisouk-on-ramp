@@ -57,26 +57,6 @@ const FAQ = () => {
           </Accordion>
         </div>
         
-        <div className="text-center space-y-6">
-          <h3 className="text-xl font-semibold text-foreground">
-            Still have questions? We're here to help!
-          </h3>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="outline-orange" size="lg" className="flex items-center">
-              <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp Support
-            </Button>
-            <Button variant="cta" size="lg" className="flex items-center">
-              <Phone className="w-5 h-5 mr-2" />
-              Call +91-98XXXXXX
-            </Button>
-          </div>
-          
-          <p className="text-sm text-muted-foreground">
-            Available in Hindi, English, Gujarati, Tamil, Bengali, Marathi, and more regional languages
-          </p>
-        </div>
       </div>
     </section>
   );

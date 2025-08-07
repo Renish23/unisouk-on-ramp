@@ -35,7 +35,12 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                onClick={() => window.open('https://dashboard.unisouk.com/auth/login/', '_blank')}
+              >
                 Get Started in Minutes
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -52,7 +57,7 @@ const Hero = () => {
             <div className="flex items-center space-x-8 pt-4">
               <div className="flex items-center space-x-2">
                 <Users className="w-5 h-5 text-brand-orange" />
-                <span className="text-sm">Trusted by 1000+ sellers</span>
+                <span className="text-sm">Trusted by 7.5 lakhs + sellers across India</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Zap className="w-5 h-5 text-brand-orange" />

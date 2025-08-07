@@ -61,13 +61,6 @@ const HowItWorks = () => {
                     <p className="text-muted-foreground group-hover:text-foreground transition-colors">{step.description}</p>
                   </div>
                   
-                  {index === steps.length - 1 && (
-                    <div className="pt-4">
-                      <Button variant="hero" className="w-full group-hover:bg-brand-green transition-colors">
-                        Start Step {step.number}
-                      </Button>
-                    </div>
-                  )}
                 </CardContent>
               </Card>
             ))}
