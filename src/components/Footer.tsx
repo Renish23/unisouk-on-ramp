@@ -1,5 +1,5 @@
 import { Phone, Mail, Instagram, Linkedin } from "lucide-react";
-import unisoukLogo from "@/assets/unisouk-logo.png";
+import unisoukLogo from "@/assets/unisouk-logo-light.png";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src={unisoukLogo} 
                 alt="UniSouk Logo" 
-                className="w-10 h-10 object-contain"
+                className="h-10 w-auto object-contain brightness-0 invert"
               />
             </div>
             <p className="text-sm opacity-80 leading-relaxed">

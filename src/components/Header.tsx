@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import unisoukLogo from "@/assets/hero-shopkeeper.jpg";
+import unisoukLogo from "@/assets/unisouk-logo-dark.png";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
             <img 
               src={unisoukLogo} 
               alt="UniSouk Logo" 
-              className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              className="h-8 md:h-10 w-auto object-contain"
             />
           </div>
         </div>
