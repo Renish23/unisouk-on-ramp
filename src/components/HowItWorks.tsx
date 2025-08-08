@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { UserPlus, Upload, Rocket } from "lucide-react";
-import ONDCBadge from "@/components/ONDCBadge";
+
 const HowItWorks = () => {
   const steps = [
     {
@@ -37,9 +37,6 @@ const HowItWorks = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             No technical knowledge required. We guide you through every step.
           </p>
-          <div className="mt-4">
-            <ONDCBadge size="sm" variant="subtle" />
-          </div>
         </div>
         
         <div className="relative max-w-5xl mx-auto">
