@@ -1,6 +1,6 @@
 import { Phone, Mail, Instagram, Linkedin } from "lucide-react";
 import unisoukLogo from "@/assets/unisouk-logo-light.png";
-
+import ONDCBadge from "@/components/ONDCBadge";
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-12">
@@ -18,6 +18,9 @@ const Footer = () => {
             <p className="text-sm opacity-80 leading-relaxed">
               India's easiest way to join ONDC and grow your business online. Trusted by thousands of sellers across India.
             </p>
+            <div className="pt-2">
+              <ONDCBadge size="sm" variant="onDark" />
+            </div>
           </div>
           
           {/* Quick Links */}

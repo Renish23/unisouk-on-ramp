@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Zap, Rocket } from "lucide-react";
-
+import ONDCBadge from "@/components/ONDCBadge";
 const CTA = () => {
   return (
     <section className="py-20 md:py-32 bg-gradient-to-br from-brand-green via-brand-green-light to-brand-orange relative overflow-hidden">
@@ -37,7 +37,10 @@ const CTA = () => {
           </div>
           
           {/* CTA Button */}
-          <div className="pt-6">
+          <div className="pt-6 space-y-4">
+            <div className="flex justify-center">
+              <ONDCBadge variant="onDark" size="sm" />
+            </div>
             <Button 
               size="lg" 
               className="bg-white text-brand-green hover:bg-orange-50 transition-all duration-300 text-xl px-12 py-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 font-semibold"
