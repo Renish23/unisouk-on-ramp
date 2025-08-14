@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import heroImage from "@/assets/hero-shopkeeper.jpg";
-import ONDCBadge from "@/components/ONDCBadge";
 import { ArrowRight, CheckCircle, Shield, Users, Zap } from "lucide-react";
 const Hero = () => {
   return (
@@ -22,9 +21,6 @@ const Hero = () => {
                   <Shield className="w-3 h-3 mr-1" />
                   No Hidden Charges
                 </Badge>
-              </div>
-              <div className="pt-2">
-                <ONDCBadge variant="onDark" size="sm" />
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">

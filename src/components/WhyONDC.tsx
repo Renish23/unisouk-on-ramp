@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Smartphone, DollarSign, Users, Shield } from "lucide-react";
-import ONDCBadge from "@/components/ONDCBadge";
 const WhyONDC = () => {
   const benefits = [
     {
@@ -36,9 +35,6 @@ const WhyONDC = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             ONDC is India's new UPI for commerce – made for small businesses by the government.
           </p>
-          <div className="mt-4">
-            <ONDCBadge size="sm" variant="subtle" />
-          </div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
