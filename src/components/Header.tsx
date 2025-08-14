@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import unisoukLogo from "@/assets/unisouk-logo-dark.png";
-
+import ONDCBadge from "@/components/ONDCBadge";
 const Header = () => {
   return (
     <header className="w-full bg-white border-b border-border sticky top-0 z-50">
@@ -12,6 +12,9 @@ const Header = () => {
               alt="UniSouk Logo" 
               className="h-8 md:h-10 w-auto object-contain"
             />
+          </div>
+          <div className="hidden md:block">
+            <ONDCBadge size="sm" variant="subtle" />
           </div>
         </div>
         

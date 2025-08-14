@@ -8,7 +8,6 @@ import ProductCategories from "@/components/ProductCategories";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import WhatIsONDC from "@/components/WhatIsONDC";
 
 const Index = () => {
   return (
@@ -16,7 +15,6 @@ const Index = () => {
       <Header />
       <Hero />
       <WhyONDC />
-      <WhatIsONDC />
       <WhyUniSouk />
       <HowItWorks />
       <SuccessStories />
